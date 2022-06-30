@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { urlBase, urlImage, headersConfig } from "../../config/api";
-import axios from "axios";
-import { Box } from "@mui/system";
 import {
+  Box,
   Card,
   CardContent,
   CardMedia,
@@ -14,6 +11,9 @@ import {
   useTheme,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import { useEffect, useState } from "react";
+import { urlBase, urlImage, headersConfig } from "../../config/api";
+import axios from "axios";
 
 const ListMovies = () => {
   const [movies, setMovies] = useState([]);
